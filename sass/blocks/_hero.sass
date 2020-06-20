@@ -1,0 +1,28 @@
+.hero
+    margin-top: 134px
+    &-block
+        display: flex
+    &-text
+        flex: 0 1 50%
+        margin-top: 80px
+        &__title
+            +title
+            font-size: 4.5rem
+        &__subtitle
+            margin-top: 40px
+            margin-bottom: 60px
+            +regular
+            font-size: 2.4rem
+        &-list
+            margin-left: -40px
+            list-style: none
+            &__li
+                margin-bottom: 30px
+                +regular
+                font-size: 1.8rem
+                background: url('../img/hero-marker.png') no-repeat left center
+                padding-left: 100px
+        &__button
+            margin-top: 20px
+    &__image
+        flex: 0 1 50%

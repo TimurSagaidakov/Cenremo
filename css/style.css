@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+html {
+  font-size: 10px;
+}
+
+body {
+  min-width: 1130px;
+}
+
+img {
+  width: 110%;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1130px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 13.3px;
+  letter-spacing: -1.2px;
+  color: #000000;
+  padding: 15px 29px;
+  background-color: #ffcc00;
+  background-image: linear-gradient(-1deg, #ffcc00 0%, #ffe788 100%);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+b {
+  color: #000000;
+}
+
+span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-weight: 600;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.navigation__logo {
+  flex: 0 1 30%;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  flex: 0 1 30%;
+}
+
+.navigation-menu__text {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+.navigation-callback {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 34%;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+.navigation-callback__phone {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000000;
+}
+
+@media (max-width: 750px) {
+  .navigation-menu {
+    display: none;
+  }
+  .navigation-callback {
+    margin-right: 200px;
+  }
+}
+
+.hero {
+  margin-top: 134px;
+}
+
+.hero-block {
+  display: flex;
+}
+
+.hero-text {
+  flex: 0 1 50%;
+  margin-top: 80px;
+}
+
+.hero-text__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffcd07;
+  font-size: 4.5rem;
+}
+
+.hero-text__subtitle {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 2.4rem;
+}
+
+.hero-text-list {
+  margin-left: -40px;
+  list-style: none;
+}
+
+.hero-text-list__li {
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 1.8rem;
+  background: url("../img/hero-marker.png") no-repeat left center;
+  padding-left: 100px;
+}
+
+.hero-text__button {
+  margin-top: 20px;
+}
+
+.hero__image {
+  flex: 0 1 50%;
+}
+/*# sourceMappingURL=style.css.map */
