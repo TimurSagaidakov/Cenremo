@@ -109,13 +109,10 @@ span {
   margin-top: 134px;
 }
 
-.hero-block {
-  display: flex;
-}
-
 .hero-text {
-  flex: 0 1 50%;
-  margin-top: 80px;
+  width: 105%;
+  background: url("../img/hero-img.png") no-repeat right center;
+  padding-top: 80px;
 }
 
 .hero-text__title {
@@ -152,9 +149,5 @@ span {
 
 .hero-text__button {
   margin-top: 20px;
-}
-
-.hero__image {
-  flex: 0 1 50%;
 }
 /*# sourceMappingURL=style.css.map */
