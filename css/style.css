@@ -81,7 +81,10 @@ span {
 
 .head {
   position: fixed;
+  z-index: 99;
   top: 0;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
   width: 100%;
 }
 
@@ -89,11 +92,11 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3.8rem;
+  padding: 4rem 0;
 }
 
 .navigation__logo {
-  flex: 0 1 30%;
+  flex: 0 1 20%;
 }
 
 .navigation-menu {
@@ -191,6 +194,10 @@ span {
 .hero__image {
   flex-basis: 55%;
   margin-right: -8rem;
+}
+
+@media (max-width: 769px) {
+  margin-right: 0;
 }
 
 .economy {
