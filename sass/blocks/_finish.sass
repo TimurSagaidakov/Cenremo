@@ -1,0 +1,160 @@
+.finish
+    background: url('../img/finish-blocks.png') no-repeat center 
+    position: relative
+    max-width: 1200px
+    padding: 15px 
+    padding-right:
+    margin: auto
+    margin-top: 220px
+    &__title
+        +title
+        max-width: 800px
+        margin-bottom: 80px
+    &-block
+        box-sizing: border-box
+        flex-basis: 49%
+        margin-top: 50px
+        &s
+            display: flex
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+        &-head 
+            padding-top: 343px
+            background: url('../img/finish-block1.png')    no-repeat
+            &__button
+                border: none
+                outline: none
+                width: 85%
+                background-image: linear-gradient(-1deg, #ffcc00 0%, #ffe788 100%)
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 5px 0
+                &:hover
+                    cursor: pointer
+                    .finish-arrow
+                        fill: #ffe684
+
+                span
+                    margin-right: 25px
+                    +regular
+                    font-size: 2rem
+                    font-weight: 800
+        &-description
+            flex-basis: 50%
+            background-color: rgba(#ffcc00, 0.6)
+            border-radius: 0 0 30px 30px
+            +regular
+            font-size: 20px 
+            &-list
+                padding-top: 20px
+                padding-left: 50px
+                list-style: none
+                li
+                    padding-bottom: 20px
+.modal
+    visibility: hidden
+    position: absolute
+    top: 21.8%
+    left: 3%
+    display: flex
+    justify-content: space-between
+    padding: 55px
+    background-color: #fff
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.18)
+    width: 82%
+    &-active
+        visibility: visible
+    &__title
+        +regular
+        font-size: 20px
+        font-weight: 700
+        margin: 30px 0 15px
+    &__address
+        margin-top: 15px
+        +regular
+        font-size: 16px
+        font-weight: 500
+    &-object
+        flex-basis: 50%
+        &__image
+    &-point
+        flex-basis: 44%
+    &-progressbar
+        position: relative
+        &__complete
+            position: absolute
+            top: 40%
+            right: 40%
+            +regular
+            font-size: 20px
+            font-weight: 1000
+    &-point
+        &-list
+            display: flex
+            flex-direction: column
+            label
+                &:hover
+                    cursor: pointer
+            span
+                display: flex
+                +regular
+                font-size: 14px
+                font-weight: 500
+                align-items: center
+                margin-bottom: 7px
+                &::before
+                    display: block
+                    content: ''
+                    background-color: #fff
+                    border: 1px solid #ffcc00
+                    width: 7px
+                    height: 7px
+                    border-radius: 10px
+                    margin-right: 20px
+                    
+        &__check
+            display: none
+            &:checked+span::before
+                width: 10px
+                height: 10px
+                background-color: #ffcc00
+                border: none                     
+    &__button
+        background-image: linear-gradient(-1deg, #ffcc00 0%, #ffe788 100%)
+        padding: 32px 90px
+        border: none
+        +regular
+        font-size: 20px
+        font-weight: 800
+        margin-top: 36px
+    &-close
+        fill: #aaaaaa
+        position: absolute
+        top: 50px
+        right: 50px
+        &:hover
+            cursor: pointer
+        
+
+
+                
+.ui-widget-header
+    background-color: #ffcc00
+    color: #ffffff
+    font-weight: bold
+.ui-widget-header a
+    color: #ffffff
+.ui-progressbar
+    height: 100px
+    text-align: left
+    margin: 11px 0 0 0
+.ui-progressbar-value
+    margin: 0px
+    height: 100%
+
+
+
+
+    

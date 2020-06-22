@@ -1,4 +1,5 @@
 .repair  
+    position: relative
     &-without
         &__title
             +title
@@ -22,14 +23,49 @@
                 +regular
                 font-size: 2rem
                 font-weight: 600
+                border: none
+                outline: none
+                &:hover
+                    cursor: pointer
+                    background-image: linear-gradient(-1deg, #ddaa00 0%, #ffe788 100%)
             &__example
-                text-decoration: none
+                outline: none
                 background-color: #959595
                 background-image: linear-gradient(-1deg, #999999 0%, #acacac 100%)
                 +regular
                 font-size: 2rem
                 font-weight: 600
                 padding: 3rem 13.95rem
+                border: none
+                &:hover
+                    cursor: pointer
+                    background-image: linear-gradient(-1deg, #777777 0%, #acacac 100%)
+
+    &-form
+        visibility: hidden
+        position: absolute
+        top: 22.1%
+        left: 40%
+        &-close
+            position: absolute
+            top: 0
+            right: -5rem
+            fill: #5d5d5d
+            &:hover
+                cursor: pointer
+        &-active
+            visibility: visible
+        &__title
+            font-size: 2rem
+            font-weight: 600
+            a
+                text-decoration: underline
+                color: #000000
+        span
+            display: inline-block
+            font-size: 14px
+            font-weight: 400
+            margin: 2.7rem 0
     &-price
         display: flex
         justify-content: space-between
@@ -56,4 +92,5 @@
         small
             +regular
             font-size: 2.3rem
+
 

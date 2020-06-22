@@ -1,0 +1,95 @@
+.slider
+    visibility: hidden
+    background-color: #fff
+    width: 71.5rem
+    position: absolute
+    top: 22.1%
+    left: 30%
+    box-shadow: -2px 3px 65px rgba(0, 0, 0, 0.26)
+    &__active
+        visibility: visible
+    &__title
+        +title
+        font-size: 2.3rem
+        padding: 3rem 5rem
+    &__img
+        width: 100%
+    &-price
+        display: flex
+        justify-content: space-between  
+        &__text
+            +regular
+            font-size: 1.6rem
+            line-height: 2.5rem
+            flex-basis: 22%
+            font-weight: 500
+    &-wrap
+        &-text
+            padding: 3.2rem
+            &::after
+                content: ''
+                width: 65.2rem
+                height: 0.2rem
+                background-color: #d9d9d9
+                display: block
+                margin-top: 1.5rem
+    &-numbers
+        display: flex
+        justify-content: space-between
+        padding-left: 3.2rem
+        padding-right: 3.2rem
+        &__number
+            +regular
+            font-size: 1.6rem
+            font-weight: 700
+            flex-basis: 22%
+    &-footer
+        display: flex
+        align-items: center
+        justify-content: space-around
+        padding: 4.5rem 9rem
+    &-close
+        position: absolute
+        top: 0
+        right: -5rem
+        fill: #5d5d5d
+        &:hover
+            cursor: pointer
+.dots
+    list-style: none
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
+    transform: translateY(-1000%)
+    li
+        width: 19px
+        height: 19px
+        border-radius: 50%
+        background-color: #ffffff
+        margin-left: 10px
+        &.slick-active
+            background-color: #ffcc00
+    button
+        display: none
+    
+    
+    
+    
+    
+    
+    
+    
+.left-arrow
+    transform: rotate(180deg)
+    width: 5rem
+    height: 4.9rem
+    &:hover
+        fill: #ffe77f
+        cursor: pointer
+.right-arrow
+    width: 5rem
+    height: 4.9rem
+    &:hover
+        fill: #ffe77f
+        cursor: pointer

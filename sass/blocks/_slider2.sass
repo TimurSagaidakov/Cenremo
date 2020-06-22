@@ -1,0 +1,167 @@
+.repair  
+    &-without        
+        &-block      
+            &-second
+                background-image: url('../img/repair-with.png')
+            &__price2
+                text-decoration: none
+                background-color: #ffcc00
+                background-image: linear-gradient(-1deg, #ffcc00 0%, #ffe788 100%)
+                padding: 3rem 5rem
+                +regular
+                font-size: 2rem
+                font-weight: 600
+                border: none
+                outline: none
+                &:hover
+                    cursor: pointer
+                    background-image: linear-gradient(-1deg, #ddaa00 0%, #ffe788 100%)
+            &__example2
+                outline: none
+                background-color: #959595
+                background-image: linear-gradient(-1deg, #999999 0%, #acacac 100%)
+                +regular
+                font-size: 2rem
+                font-weight: 600
+                padding: 3rem 13.95rem
+                border: none
+                &:hover
+                    cursor: pointer
+                    background-image: linear-gradient(-1deg, #777777 0%, #acacac 100%)
+    &-form2
+        visibility: hidden
+        position: absolute
+        top: 22.1%
+        left: 40%
+        &-close2
+            position: absolute
+            top: 0
+            right: -5rem
+            fill: #5d5d5d
+            &:hover
+                cursor: pointer
+        &-active2
+            visibility: visible
+        &__title
+            font-size: 2rem
+            font-weight: 600
+            a
+                text-decoration: underline
+                color: #000000
+        span
+            display: inline-block
+            font-size: 14px
+            font-weight: 400
+            margin: 2.7rem 0
+    &-price2
+        display: flex
+        justify-content: space-between
+        margin-top: 9rem
+        &-block
+            flex-basis: 30%
+            &:nth-of-type(2)
+                border-left: 0.6rem solid  #ffcc00
+                border-right: 0.6rem solid  #ffcc00
+                padding: 0 2.7rem                               
+            &__title
+                +regular
+                font-size: 2.5rem
+                line-height: 3.5rem
+            &__number
+                +regular
+                font-size: 3rem
+.slider2
+    visibility: hidden
+    background-color: #fff
+    width: 71.5rem
+    position: absolute
+    top: 22.1%
+    left: 30%
+    box-shadow: -2px 3px 65px rgba(0, 0, 0, 0.26)
+    &__active2
+        visibility: visible
+    &__title
+        +title
+        font-size: 2.3rem
+        padding: 3rem 5rem
+    &__img
+        width: 100%
+    &-price2
+        display: flex
+        justify-content: space-between  
+        &__text
+            +regular
+            font-size: 1.6rem
+            line-height: 2.5rem
+            flex-basis: 22%
+            font-weight: 500
+    &-wrap2
+        &-text
+            padding: 3.2rem
+            &::after
+                content: ''
+                width: 65.2rem
+                height: 0.2rem
+                background-color: #d9d9d9
+                display: block
+                margin-top: 1.5rem
+    &-numbers
+        display: flex
+        justify-content: space-between
+        padding-left: 3.2rem
+        padding-right: 3.2rem
+        &__number
+            +regular
+            font-size: 1.6rem
+            font-weight: 700
+            flex-basis: 22%
+    &-footer
+        display: flex
+        align-items: center
+        justify-content: space-around
+        padding: 4.5rem 9rem
+    &-close2
+        position: absolute
+        top: 0
+        right: -5rem
+        fill: #5d5d5d
+        &:hover
+            cursor: pointer
+.dots2
+    list-style: none
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
+    transform: translateY(-1000%)
+    li
+        width: 19px
+        height: 19px
+        border-radius: 50%
+        background-color: #ffffff
+        margin-left: 10px
+        &.slick-active
+            background-color: #ffcc00
+    button
+        display: none
+    
+    
+    
+    
+    
+    
+    
+    
+.left-arrow2
+    transform: rotate(180deg)
+    width: 5rem
+    height: 4.9rem
+    &:hover
+        fill: #ffe77f
+        cursor: pointer
+.right-arrow2
+    width: 5rem
+    height: 4.9rem
+    &:hover
+        fill: #ffe77f
+        cursor: pointer
