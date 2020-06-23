@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
 html {
   font-size: 10px;
@@ -977,12 +978,20 @@ span {
 }
 
 .finish-block {
+  position: relative;
   box-sizing: border-box;
   flex-basis: 49%;
   margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.finish-block-1 {
+  flex-basis: 49%;
 }
 
 .finish-blocks {
+  height: 750px;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1045,14 +1054,15 @@ span {
 .modal {
   visibility: hidden;
   position: absolute;
-  top: 21.8%;
-  left: 3%;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   padding: 55px;
   background-color: #fff;
   box-shadow: 0 4px 13px rgba(0, 0, 0, 0.18);
-  width: 82%;
+  width: 199%;
+  z-index: 99;
 }
 
 .modal-active {
@@ -1157,12 +1167,80 @@ span {
 .modal-close {
   fill: #aaaaaa;
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 25px;
+  right: 90px;
 }
 
 .modal-close:hover {
   cursor: pointer;
+}
+
+.show {
+  text-align: center;
+}
+
+.show-passive {
+  display: none;
+}
+
+.show__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffcd07;
+  font-weight: 800;
+  margin-top: 70px;
+  margin-bottom: 25px;
+}
+
+.show__button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.show__arrow {
+  transform: rotate(90deg);
+}
+
+.show__arrow:hover {
+  cursor: pointer;
+  fill: #ffd200;
+}
+
+.hide {
+  margin-top: 40px;
+  text-align: center;
+  display: none;
+}
+
+.hide-active {
+  display: block;
+}
+
+.hide__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffcd07;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.hide__button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.hide__arrow {
+  transform: rotate(-90deg);
+}
+
+.hide__arrow:hover {
+  cursor: pointer;
+  fill: #ffd200;
 }
 
 .ui-widget-header {
@@ -1184,5 +1262,127 @@ span {
 .ui-progressbar-value {
   margin: 0px;
   height: 100%;
+}
+
+.sale {
+  margin-top: 150px;
+}
+
+.sale-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.sale-head-text {
+  line-height: 60px;
+  flex-basis: 60%;
+}
+
+.sale-head-text__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffcd07;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.sale-head-text__small {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+}
+
+.sale-company {
+  width: 106%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reviews {
+  margin-top: 150px;
+  background: url("../img/Узор 5.png") no-repeat center top;
+}
+
+.reviews-block {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.reviews__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffcd07;
+  text-transform: uppercase;
+  margin-bottom: 150px;
+  padding: 0 50px;
+}
+
+.reviews__image {
+  margin-bottom: 85px;
+}
+
+.reviews__image:last-of-type {
+  padding-bottom: 200px;
+}
+
+footer {
+  background-color: #404040;
+}
+
+.footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-ip {
+  text-align: right;
+  line-height: 30px;
+}
+
+.footer-ip__name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-ip__logo {
+  width: 50%;
+}
+
+.footer-contacts-phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.footer-contacts-phone img {
+  width: 15%;
+}
+
+.footer-contacts-phone__number {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 15px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-contacts__button {
+  padding: 17px 38px 14px 38px;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -84,7 +84,27 @@ $(document).ready(function(){
     $('.finish-block-head__button').on('click', function(){
         $('.modal').addClass('modal-active');
     });
-    $('.modal-button__close').on('click', function(){
+    $('.modal__close').on('click', function(){
         $('.modal').removeClass('modal-active');
     });
+    $('.show__button').on('click', function(){
+        $('.finish-blocks').animate({
+            height: "1500px"
+        }, 500, "linear");
+        $('.hide').addClass('hide-active');
+        $('.show').addClass('show-passive');
+    });
+    $('.hide__button').on('click', function(){
+        $('.finish-blocks').animate({
+            height: "750px"
+        }, 500, "linear");
+        $('.hide').removeClass('hide-active');
+        $('.show').removeClass('show-passive');
+    });
+    $("a[href^='#']").click(function(){
+        var _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top -150 + "px"}, 1000);
+        return false;
+    });
 });
+
