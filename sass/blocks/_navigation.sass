@@ -21,6 +21,20 @@
             text-decoration: none
             font-size: 2rem
             +regular
+            position: relative
+            &::after
+                content: ''
+                width: 100%
+                height: 2px
+                background-color: #999999
+                display: block
+                transition: .7s
+                transform-origin: center
+                transform: translateY(15px) scale(0)
+            &:hover::after                
+                transform: translateY(15px) scale(1)
+                
+                    
     &-callback
         display: flex
         justify-content: center
