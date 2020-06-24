@@ -449,6 +449,7 @@ span {
 
 .repair {
   position: relative;
+  overflow: hidden;
 }
 
 .repair-without__title {
