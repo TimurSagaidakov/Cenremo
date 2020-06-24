@@ -1286,6 +1286,7 @@ span {
 
 .sale {
   margin-top: 150px;
+  overflow: hidden;
 }
 
 .sale-head {
@@ -1394,7 +1395,13 @@ span {
   background-color: #a4d1f4;
 }
 
-footer {
+.f-wrap {
+  perspective: 500px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.wrap {
   background-color: #404040;
 }
 

@@ -91,6 +91,7 @@ $(document).ready(function(){
         $('.finish-blocks').animate({
             height: "1500px"
         }, 500, "linear");
+        $("html, .finish-blocks").animate({ scrollTop: +6450 +"px"},500);
         $('.hide').addClass('hide-active');
         $('.show').addClass('show-passive');
     });
