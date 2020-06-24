@@ -11,19 +11,23 @@ $(document).ready(function(){
 $('.repair-without-block__example').on('click', function(){
     $('.slider').toggleClass('slider__active');
     $('.repair-form').removeClass('repair-form-active');
+    $('.bgc-modal').addClass('bgc-modal-active');
 });
 $('.slider-close').on('click', function(){
     $('.slider').removeClass('slider__active');
+    $('.bgc-modal').removeClass('bgc-modal-active');
+
 });
 $('.repair-without-block__price').on('click', function(){
     $('.repair-form').toggleClass('repair-form-active');
     $('.slider').removeClass('slider__active');
+    $('.bgc-modal').addClass('bgc-modal-active');
 });
 $('.repair-form-close').on('click', function(){
     $('.repair-form').removeClass('repair-form-active');
+    $('.bgc-modal').removeClass('bgc-modal-active');
     });
 });
-
 $(document).ready(function(){
     $('.slider2-wrap2').slick({
         dots: true,
@@ -37,16 +41,20 @@ $(document).ready(function(){
 $('.repair-without-block__example2').on('click', function(){
     $('.slider2').toggleClass('slider2__active2');
     $('.repair-form2').removeClass('repair-form2-active2');
+    $('.bgc-modal').addClass('bgc-modal-active');
 });
 $('.slider2-close2').on('click', function(){
     $('.slider2').removeClass('slider2__active2');
+    $('.bgc-modal').removeClass('bgc-modal-active');
 });
 $('.repair-without-block__price2').on('click', function(){
     $('.repair-form2').toggleClass('repair-form2-active2');
     $('.slider2').removeClass('slider2__active2');
+    $('.bgc-modal').addClass('bgc-modal-active');
 });
 $('.repair-form2-close2').on('click', function(){
     $('.repair-form2').removeClass('repair-form2-active2');
+    $('.bgc-modal').removeClass('bgc-modal-active');
     });
 });
 

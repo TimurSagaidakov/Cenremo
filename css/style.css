@@ -84,6 +84,21 @@ span {
   color: #ffcd07;
 }
 
+.bgc-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.bgc-modal-active {
+  display: block;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -515,6 +530,7 @@ span {
   position: absolute;
   top: 22.1%;
   left: 40%;
+  z-index: 101;
 }
 
 .repair-form-close {
@@ -607,6 +623,7 @@ span {
   top: 22.1%;
   left: 30%;
   box-shadow: -2px 3px 65px rgba(0, 0, 0, 0.26);
+  z-index: 101;
 }
 
 .slider__active {
@@ -780,6 +797,7 @@ span {
   position: absolute;
   top: 22.1%;
   left: 40%;
+  z-index: 101;
 }
 
 .repair-form2-close2 {
@@ -853,6 +871,7 @@ span {
   top: 22.1%;
   left: 30%;
   box-shadow: -2px 3px 65px rgba(0, 0, 0, 0.26);
+  z-index: 101;
 }
 
 .slider2__active2 {
@@ -1083,7 +1102,7 @@ span {
   background-color: #fff;
   box-shadow: 0 4px 13px rgba(0, 0, 0, 0.18);
   width: 199%;
-  z-index: 99;
+  z-index: 100;
 }
 
 .modal-active {
